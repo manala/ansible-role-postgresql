@@ -1,0 +1,38 @@
+---
+
+# Requirements
+- import_tasks: requirements.yml
+  tags:
+    - manala_postgresql
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_postgresql
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_postgresql
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_postgresql
+    - manala_postgresql.services
+    - manala.services
+
+# Roles
+- import_tasks: roles.yml
+  tags:
+    - manala_postgresql
+
+# Databases
+- import_tasks: databases.yml
+  tags:
+    - manala_postgresql
+
+# Privileges
+- import_tasks: privileges.yml
+  tags:
+    - manala_postgresql
